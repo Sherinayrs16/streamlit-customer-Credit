@@ -17,31 +17,31 @@ st.title('Prediksi Customer Credit')
 col1, col2 = st.columns(2)
 
 with col1 :
-    checking_status = st.text_input('Input Checking Status')
+    checking_status = st.text_input('Input Checking Status ( 0.0 = Checking ; 1.0 = No Checking)')
 
 with col2 :
     duration = st.text_input('Input Duration')
 
 with col1 :
-    credit_history = st.text_input('Input Credit History')
+    credit_history = st.text_input('Input Credit History ( 0.0 = all paid  ; 1.0 = critical/other existing credit ; 2.0 = delayed previously ; 3.0 = existing paid )')
 
 with col2 :
     credit_amount = st.text_input('Input Credit Amount')
 
 with col1 :
-    savings_status = st.text_input('Input Saving Status')
+    savings_status = st.text_input('Input Saving Status ( 0.0 = No known savings ; 1.0 = known savings) ')
 
 with col2 :
-    employment = st.text_input('Input Employment')
+    employment = st.text_input('Input Employment ( 0.0 = unemployed ; 1.O = working )')
 
 with col1 :
     installment_commitment = st.text_input('Input Installment Comitment')
 
 with col2 :
-     personal_status = st.text_input('Input Personal Status')
+     personal_status = st.text_input('Input Personal Status ( 1.0 = singgel ; 0.0 = married )')
 
 with col1 :
-    other_parties = st.text_input('Input Other Parties')
+    other_parties = st.text_input('Input Other Parties ( 0.0 = co applicant ; 2.0 = none ; 1.0 = guarantor')
 
 with col2 :
     residence_since = st.text_input('Input Residence Since')
@@ -50,19 +50,19 @@ with col1 :
     age = st.text_input('Input Age')
 
 with col2 : 
-    housing = st.text_input('Input Housing')
+    housing = st.text_input('Input Housing ( 0.0 = for free ; 1.0 = own )')
 
 with col1 :
     existing_credits = st.text_input('Input Existing Credits')
 
 with col2 :
-    job = st.text_input('Input Job')
+    job = st.text_input('Input Job ( 0.0 = skilled ; 1.0 =  unskilled )')
 
 with col1 :
     num_dependents = st.text_input('Input Num Dependents')
 
 with col2 :
-    own_telephone = st.text_input('Input Own Telephone')
+    own_telephone = st.text_input('Input Own Telephone ( 0.0 = none ; 1.0 = yes )')
 
 # Code untuk prediksi
 CustomerCredit_prediksi = ''
