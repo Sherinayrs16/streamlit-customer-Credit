@@ -17,13 +17,13 @@ st.title('Prediksi Customer Credit')
 col1, col2 = st.columns(2)
 
 with col1 :
-    checking_status = st.text_input('Input Checking Status')
+    checking_status = st.text_input('Input Checking Status ( 0.0 = Checking ; 1.0 = No Checking)')
 
 with col2 :
     duration = st.text_input('Input Duration')
 
 with col1 :
-    credit_history = st.text_input('Input Credit History')
+    credit_history = st.text_input('Input Credit History ')
 
 with col2 :
     credit_amount = st.text_input('Input Credit Amount')
